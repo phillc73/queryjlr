@@ -1,0 +1,19 @@
+Package: queryjlr
+Type: Package
+Title: LINQ with R, together at last
+Version: 0.1.1
+Date: 2021-03-06
+Author: Phill Clarke
+Maintainer: Phill Clarke <phill@fastmail.com>
+Description: Realising the beautiful dream of LINQ like queries for R.
+Depends:
+    JuliaCall (>= 0.17.2.9000)
+    R (>= 3.6.0)
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/phillc73/queryjlr
+BugReports: http://www.github.com/phillc73/queryjlr/issues
+Imports:
+    stringi (>= 1.4.6)
+RoxygenNote: 7.0.2
