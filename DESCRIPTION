@@ -7,7 +7,7 @@ Author: Phill Clarke
 Maintainer: Phill Clarke <phill@fastmail.com>
 Description: Realising the beautiful dream of LINQ like queries for R.
 Depends:
-    JuliaCall (>= 0.17.2.9000)
+    JuliaCall (>= 0.17.2.9000),
     R (>= 3.6.0)
 License: GPL-3 | file LICENSE
 Encoding: UTF-8
