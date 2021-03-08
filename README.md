@@ -17,15 +17,23 @@ julia <- julia_setup()
 
 julia_library("Query")
 julia_library("DataFrames")
+
 ```
 
 If `julia_setup()` fails and refused to find Julia, refer to the [`JuliaCall` documentation](https://github.com/Non-Contradiction/JuliaCall).
 
 You will also need both the `Query` and `DataFrames` packages from Julia installed.
 
-Manually load the function found in `linq.R`
+Then install the package:
 
-Then try the following:
+```r
+# install.packages("remotes")
+library("remotes")
+remotes::install_github("phillc73/queryjlr")
+library("queryjlr")
+```
+
+And try the following:
 
 ```r
 linqr("@from i in mtcars begin
