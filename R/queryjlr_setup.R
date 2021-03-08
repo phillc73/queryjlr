@@ -1,5 +1,5 @@
 
-.onLoad <- function(libname, pkgname) {
+queryjlr_setup <- function() {
 
     julia_home <- readline(prompt="Please enter full path to the Julia executable on your machine: ")
     
