@@ -7,18 +7,7 @@ LINQ with R
 
 ### Quick Start
 
-Run the following code (which will eventually be automatically executed on package load, or something)
-
-```r
-library(JuliaCall)
-
-julia <- julia_setup()
-
-```
-
-If `julia_setup()` fails and refused to find Julia, refer to the [`JuliaCall` documentation](https://github.com/Non-Contradiction/JuliaCall).
-
-Then install the package:
+Install the package:
 
 ```r
 # install.packages("remotes")
@@ -27,9 +16,17 @@ remotes::install_github("phillc73/queryjlr")
 library("queryjlr")
 ```
 
-Both the `Query` and `DataFrames` packages from Julia will be loaded, and installed if not present, during loading of `queryjlr` library.
+Run the setup function:
 
-And try the following:
+```r
+queryjlr_setup()
+```
+
+You will be prompted to enter the full path of the Julia executable on your machine. If this path is incorrect, all else fails.
+
+Both the `Query` and `DataFrames` packages from Julia will be loaded, and installed if not present, during `queryjlr_setup`
+
+Then try the following:
 
 ```r
 linqr("@from i in mtcars begin
