@@ -11,18 +11,12 @@ Run the following code (which will eventually be automatically executed on packa
 
 ```r
 library(JuliaCall)
-library(stringi)
 
 julia <- julia_setup()
-
-julia_library("Query")
-julia_library("DataFrames")
 
 ```
 
 If `julia_setup()` fails and refused to find Julia, refer to the [`JuliaCall` documentation](https://github.com/Non-Contradiction/JuliaCall).
-
-You will also need both the `Query` and `DataFrames` packages from Julia installed.
 
 Then install the package:
 
@@ -32,6 +26,8 @@ library("remotes")
 remotes::install_github("phillc73/queryjlr")
 library("queryjlr")
 ```
+
+Both the `Query` and `DataFrames` packages from Julia will be loaded, and installed if not present, during loading of `queryjlr` library.
 
 And try the following:
 
