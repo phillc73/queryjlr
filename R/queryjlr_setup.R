@@ -1,8 +1,10 @@
 
-queryjlr_setup <- function() {
+queryjlr_setup <- function(julia_home = NULL) {
 
-    julia_home <- readline(prompt="Please enter full path to the Julia executable on your machine: ")
-    
+    if (!is.null(julia_home)) {
+        JULIA_HOME <- julia_home
+    }
+
     JuliaCall::julia_setup(JULIA_HOME=julia_home)
 
     JuliaCall::julia_install_package_if_needed("Query")
