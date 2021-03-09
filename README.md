@@ -40,3 +40,8 @@ For more about writing these types of queries, refer to the [`Query.jl` document
 
 Finally, have fun!
 
+This package is only possible thanks to:
+
+* Non-Contradiction's [JuliaCall](https://github.com/Non-Contradiction/JuliaCall) R package
+* davidanthoff's [Query.jl](https://github.com/Non-Contradiction/JuliaCall) Julia package
+
