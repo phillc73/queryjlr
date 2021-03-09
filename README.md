@@ -21,8 +21,13 @@ Run the setup function:
 ```r
 queryjlr_setup()
 ```
+If your Julia installation is not found, it is possible to define the path to it. For example:
 
-You will be prompted to enter the full path of the Julia executable on your machine. If this path is incorrect, all else fails.
+```r
+queryjlr_setup(julia_home = "/home/phillc/bin/julia-1.5.3/bin")
+```
+
+If this path is incorrect, all else fails.
 
 Both the `Query` and `DataFrames` packages from Julia will be loaded, and installed if not present, during `queryjlr_setup`
 
