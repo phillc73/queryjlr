@@ -1,4 +1,3 @@
-
 queryjlr_setup <- function(julia_home = NULL) {
 
     if (!is.null(julia_home)) {
@@ -12,4 +11,4 @@ queryjlr_setup <- function(julia_home = NULL) {
     JuliaCall::julia_library("Query")
     JuliaCall::julia_library("DataFrames")
 
-    }
+}
